@@ -38,11 +38,13 @@ body {
 
 .photo{
     max-width: 50%;
+    border: 10px solid #23d5ab;
 }
 
 .info{
     width: 50%;
     color: #ffffff;
+    padding: 0 20px;
 }
 
 header{
@@ -151,4 +153,208 @@ h2 strong{
 h2{
     font-size: 6em;
     margin: 0;
+}
+
+#acerca{
+    width: 100%;
+    background: #fff;
+    
+}
+
+#acerca .text{
+    padding: 5em 20px;
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#acerca h2{
+    margin: 0 0 0 auto;
+    width: 50%;
+}
+
+#acerca p{
+    margin: 0 auto 0;
+    width: 50%;
+}
+
+#proyectos{
+    padding: 20px 20px 40px;
+}
+
+#proyectos h2{
+    color: #fff;
+    text-align: center;
+}
+
+.mySwiper{
+    margin: 40px auto 0;
+    max-width: 1240px;
+}
+
+.card{
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.card-info{
+    padding: 20px;
+}
+
+
+#educacion{
+    border-top: 1px solid #d5cbcb;
+    padding: 20px 20px 40px;
+    position: relative;
+}
+
+.rows-edutacion::after{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: calc(100% - 137px);
+    top: 81px;
+    background: #23d5ab;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#educacion H2{
+    text-align: center;
+    color: #fff;
+}
+
+.rows-edutacion{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.rows-edutacion .row{   
+    width: calc(50% - 50px);
+    margin: 20px auto 0 0;
+    justify-content: end;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    position: relative;
+}
+
+.rows-edutacion .row:nth-child(2n){
+    margin: 0 0 0 auto;
+    justify-content: start;
+}   
+
+.rows-edutacion .row:nth-child(2n)::after{
+    right: auto;
+    left: -60px;
+}
+
+.rows-edutacion .row::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #23d5ab;
+    display: block;
+    right: -60px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+
+}
+
+
+.rows-edutacion .row p{
+    color: #fff;
+}
+
+#skills{
+    background: white;
+    padding: 0 0 40px;
+}
+
+#skills h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.rows-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flip-container {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px; 
+}
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+.flip-container:hover .card {
+    transform: rotateY(720deg);
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.back > *{
+    transform: scaleX(-1);
+}
+
+.fa-drupal,
+.fa-css3-alt{
+    color: #00a2ff;
+}
+
+.fa-html5{
+    color: #da691e;
+}
+
+.fa-js{
+    color: #ffd607;
+}
+
+.fa-sass{
+    color: #dc6190;
+}
+
+.fa-node-js{
+    color: #11862d;
+} 
+
+.fa-bootstrap{
+    color: #9b05cd;
+}
+
+.back {
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
 }

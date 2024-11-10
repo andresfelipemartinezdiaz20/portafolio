@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>portaforlio</title>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="src/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -22,7 +25,9 @@
     <section id="inicio">
         <div class="info">
             <h2>I'm <strong>Andres</strong> Martinez</h2>
-            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Profesional a espera de grado, con Tecnología en Desarrollo y
+                Análisis de Software con más de 5 años de experiencia en
+                desarrollo web, especialmente en front-end y Drupal.</p>
         </div>
         <div class="photo">
             <img src="/img/perfil.webp" alt="Descripción de la imagen">
@@ -31,22 +36,254 @@
     </section>
 
     <section id="acerca">
-        <h2>Acerca de mí</h2>
-        <p>Esta es la sección donde hablo sobre mí.</p>
+        <div class="text">
+            <h2><strong>Acerca</strong> de mí  </h2>
+            <p>Poseo un
+                amplio conocimiento en herramientas de gestión de proyectos
+                y control de versiones de software. Con experiencia en diseño
+                visual, utilizando diversas herramientas de diseño y enfocado en
+                la experiencia del usuario. <br />
+                Tengo la habilidad de plantear soluciones lógicas e innovadoras
+                a problemas complejos, gracias a mi constante interés en la
+                tecnología. Me adapto rápidamente a los requisitos de cada
+                proyecto. integrándome a los equipos de trabajo aportando
+                compromiso, responsabilidad y calidad humana para alcanzar
+                los objetivos establecidos.<br />
+                Como profesional comprometido con mi desarrollo personal,
+                constantemente evalúo y mejoro mis habilidades tanto
+                profesionales como personales.</p>
+        </div>        
+    </section>
+
+    <section id="proyectos">
+        <h2>proyectos</h2>
+        <swiper-container class="mySwiper"  slides-per-view="4" space-between="30" free-mode="true"  navigation="true" loop="true">
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
+                    </div>
+                    <div class="card-info">
+                        <h3>proyecto 1</h3>
+                        <p>el proyecto</p>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+        
+    </section>
+
+    <section id="educacion">
+        <h2>Educación</h2>
+
+        <div class="rows-edutacion">
+            <div class="row">
+                <h3>Esta es la sección donde hablo sobre mí.</h3>
+                <p>Esta es la sección donde hablo sobre mí.</p>
+            </div>
+            <div class="row">
+                <h3>Esta es la sección donde hablo sobre mí.</h3>
+                <p>Esta es la sección donde hablo sobre mí.</p>
+            </div>
+            <div class="row">
+                <h3>Esta es la sección donde hablo sobre mí.</h3>
+                <p>Esta es la sección donde hablo sobre mí.</p>
+            </div>
+            <div class="row">
+                <h3>Esta es la sección donde hablo sobre mí.</h3>
+                <p>Esta es la sección donde hablo sobre mí.</p>
+            </div>
+        </div>
+
+        <h2>Cursos</h2>
+
+        <div class="rows-edutacion">
+            <div class="row">
+                <h3>Esta es la sección donde hablo sobre mí.</h3>
+                <p>Esta es la sección donde hablo sobre mí.</p>
+            </div>
+            <div class="row">
+                <h3>Esta es la sección donde hablo sobre mí.</h3>
+                <p>Esta es la sección donde hablo sobre mí.</p>
+            </div>
+            <div class="row">
+                <h3>Esta es la sección donde hablo sobre mí.</h3>
+                <p>Esta es la sección donde hablo sobre mí.</p>
+            </div>
+            <div class="row">
+                <h3>Esta es la sección donde hablo sobre mí.</h3>
+                <p>Esta es la sección donde hablo sobre mí.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="rows-skills">
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-drupal"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-drupal"></i>
+                  </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-sass"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-sass"></i>
+                  </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-node-js"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-node-js"></i>
+                  </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-bootstrap"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-bootstrap"></i>
+                  </div>
+                </div>
+            </div> 
+        </div>
+        
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Puedes contactarme a través del siguiente formulario.</p>
-        <form action="/enviar" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <button type="submit">Enviar</button>
-        </form>
     </section>
 
     <footer>

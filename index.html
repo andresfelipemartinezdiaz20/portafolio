@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>portaforlio</title>
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="src/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Título de la página -->
+  <title>Portfolio</title>
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="src/style.css">
+
+  <!-- Scripts JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script> <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> <!-- Swiper -->
+  <script src="src/main.js" defer></script> <!-- Tu script personalizado -->
+    
 </head>
 <body>
     <header id="header">
         <h1>Andres Felipe Martinez Diaz</h1>
         <nav id="nav-1">
-            <a class="link-1" href="#">Home</a>
-            <a class="link-1" href="#">About</a>
-            <a class="link-1" href="#">Contact</a>
-            <a class="link-1" href="#">Shop</a>
+            <a class="link-1" href="#inicio">Inicio</a>
+            <a class="link-1" href="#acerca">Acerca</a>
+            <a class="link-1" href="#proyectos">Proyectos</a>
+            <a class="link-1" href="#educacion">Educación</a>
+            <a class="link-1" href="#skills">Skills</a>
         </nav>
+        <div id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
 
     <section id="inicio">
@@ -27,10 +42,12 @@
             <h2>I'm <strong>Andres</strong> Martinez</h2>
             <p>Profesional a espera de grado, con Tecnología en Desarrollo y
                 Análisis de Software con más de 5 años de experiencia en
-                desarrollo web, especialmente en front-end y Drupal.</p>
+                desarrollo web, especialmente en front-end y Drupal.
+            </p>
+            <a target="_blank" href="/files/AndresFelipemartinezdiaz.pdf" class="hv">curriculum</a>
         </div>
         <div class="photo">
-            <img src="/img/perfil.webp" alt="Descripción de la imagen">
+            <img src="/img/foto-perfil.png" alt="Descripción de la imagen">
         </div>
         
     </section>
@@ -57,107 +74,312 @@
 
     <section id="proyectos">
         <h2>proyectos</h2>
-        <swiper-container class="mySwiper"  slides-per-view="4" space-between="30" free-mode="true"  navigation="true" loop="true">
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
+        <div class="mySwiper swiper-container"  slides-per-view="4" space-between="30" free-mode="true"  navigation="true" loop="true" data-swiper-autoplay="20" >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/legis.png" alt="logo de legis">
+                        </div>
+                        <div class="card-info">
+                            <h3>Legis</h3>
+                            <p>Soporte y desarrollo Front-End
+                                Portal Web en Drupal 8</p>
+                        </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/estrenar-vivienda.jpg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Estrenar-vivienda</h3>
+                            <p>Soporte Front-End Portal Web en
+                                Drupal 8</p>
+                        </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/limprenta.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Lince (Imprenta Nacional de
+                                Colombia )</h3>
+                            <p>Soporte Front-End Portal Web en
+                                Drupal 8</p>
+                        </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/datafx.jpeg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Dataifx (Cliente internacional)</h3>
+                            <p>Soporte Front-End Portal Web en
+                                Drupal 8</p>
+                        </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="/img/perfil.webp" alt="Descripción de la imagen">
-                    </div>
-                    <div class="card-info">
-                        <h3>proyecto 1</h3>
-                        <p>el proyecto</p>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/movilexito.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Móvil Exito</h3>
+                            <p>Soporte Back y Front Portal Web en
+                                Drupal 8</p>
+                        </div>
                     </div>
                 </div>
-            </swiper-slide>
-        </swiper-container>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/grupoexito.jpg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Grupo Exito</h3>
+                            <p>Soporte Front-End Portal Web en
+                                Drupal 8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/aliados.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Aliados surtimayorista</h3>
+                            <p>Soporte y desarrollo de nuevas
+                                secciones Front-End Portal Web en
+                                Drupal 8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/catolicismo.jpg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>El Catolicismo</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/arqui.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>La Arquidiócesis de Bogotá</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/artesa.jpeg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>La Artesa</h3>
+                            <p>Desarrollo Front-End Portal Web en
+                                Drupal 8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/segib.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>SEGIB</h3>
+                            <p>Desarrollo Front-End Portal Web en
+                                Drupal 7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/aldia.jpg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Al Dia News</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/kia.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>KIA</h3>
+                            <p>Desarrollo Front-End Portal Web en
+                                Drupal 8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/seed_em_logo.jpeg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>SeedEM</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 8 - 10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/caracoltv.webp" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Caracol Tv portal corporativo</h3>
+                            <p>Desarrollo Front-End Portal Web en
+                                Drupal 7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/caracolplay.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Caracol Play</h3>
+                            <p>Soporte Front-End Portal Web en
+                                Drupal 7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/shock.webp" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Shock</h3>
+                            <p>Soporte Front-End Portal Web en
+                                Drupal 7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/libreriacarlosfuentes.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Libreria Carlos Fuentes</h3>
+                            <p>Soporte Front-End Portal Web en
+                                Drupal 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/kiire.jpg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Kiire</h3>
+                            <p>Desarrollo Front-End Portal Web en
+                                Drupal 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/bancadelasoportunidades.jpg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>banca de las oportunidades</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/fundacionexito.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Fundación Éxito</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/midescuento.jpg" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Mi Descuento Éxito</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/campus-virtual-politecnico-grancolombiano.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Politecnico Grancolombiano</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/Totto.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>totto</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="/img/viva.png" alt="logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Viva</h3>
+                            <p>Desarrollo Back y Front Portal Web en
+                                Drupal 9</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </section>
 
@@ -166,20 +388,20 @@
 
         <div class="rows-edutacion">
             <div class="row">
-                <h3>Esta es la sección donde hablo sobre mí.</h3>
-                <p>Esta es la sección donde hablo sobre mí.</p>
+                <h3>Ingeniería de Sistemas</h3>
+                <p>UNAD, Bogotá <br>(presente)</p>
             </div>
             <div class="row">
-                <h3>Esta es la sección donde hablo sobre mí.</h3>
-                <p>Esta es la sección donde hablo sobre mí.</p>
+                <h3>Análisis y desarrollo de sistemas de información</h3>
+                <p>SENA - Centro de Diseño y Meteorología, Bogotá <br>(2018)</p>
             </div>
             <div class="row">
-                <h3>Esta es la sección donde hablo sobre mí.</h3>
-                <p>Esta es la sección donde hablo sobre mí.</p>
+                <h3>Técnico en programación de software</h3>
+                <p>SENA, Soacha <br>2013</p>
             </div>
             <div class="row">
-                <h3>Esta es la sección donde hablo sobre mí.</h3>
-                <p>Esta es la sección donde hablo sobre mí.</p>
+                <h3>Bachiller técnico especialidad programación de software</h3>
+                <p>Institución Educativa Militar “Almirante Padilla”, Soacha <br>2013</p>
             </div>
         </div>
 
@@ -187,20 +409,24 @@
 
         <div class="rows-edutacion">
             <div class="row">
-                <h3>Esta es la sección donde hablo sobre mí.</h3>
-                <p>Esta es la sección donde hablo sobre mí.</p>
+                <h3>Experto en Drupal 8 Site Building</h3>
+                <p>Forcontu <br>oct 2020</p>
             </div>
             <div class="row">
-                <h3>Esta es la sección donde hablo sobre mí.</h3>
-                <p>Esta es la sección donde hablo sobre mí.</p>
+                <h3>Curso Angular 11 - desde cero hasta profesional</h3>
+                <p>Udemy <br>feb 2021</p>
             </div>
             <div class="row">
-                <h3>Esta es la sección donde hablo sobre mí.</h3>
-                <p>Esta es la sección donde hablo sobre mí.</p>
+                <h3>Master en Freameworks JavaScript: Aprende Angular, React, Vue.</h3>
+                <p>Udemy <br>abr 2021</p>
             </div>
             <div class="row">
-                <h3>Esta es la sección donde hablo sobre mí.</h3>
-                <p>Esta es la sección donde hablo sobre mí.</p>
+                <h3>Curso de Introducción al Desarrollo Web: HTML y CSS</h3>
+                <p>Google Actívate <br>abr 2021</p>
+            </div>
+            <div class="row">
+                <h3>Master en webs Full Stack: Angular, Node, Laravel, Symfony +</h3>
+                <p>Udemy <br>jun 2021</p>
             </div>
         </div>
     </section>
@@ -277,13 +503,100 @@
                     <i class="fa-brands fa-bootstrap"></i>
                   </div>
                 </div>
+            </div>
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-docker"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-docker"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-square-git"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-square-git"></i>
+                  </div>
+                </div>
             </div> 
+            <div class="flip-container">
+                <div alt="ubuntu"class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-ubuntu"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-ubuntu"></i>
+                  </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-figma"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-figma"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-sketch"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-sketch"></i>
+                  </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-apple"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-apple"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="card">
+                  <div class="front">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                </div>
+            </div>
         </div>
         
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
+        <div class="rows-concat">
+            <div class="social linkedin">
+                <a target="_blank"  href="https://www.linkedin.com/in/andres-felipe-martinez-diaz-a740601aa/">
+                   <i class="fa-brands fa-linkedin"></i> 
+                </a>
+            </div>
+            <div class="social whatsapp">
+                <a target="_blank"  href="https://wa.me/573227544540">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+            </div>
+            <div class="social gmail">
+                <a target="_blank"  href="mailto:andresfelipemartinezdiaz20@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>

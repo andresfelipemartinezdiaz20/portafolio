@@ -63,9 +63,6 @@ $(document).ready(function() {
                 prevEl: '.swiper-button-prev'
             },
             loop: true,
-            autoplay: {
-                delay: 2000,
-            },
             breakpoints: {
                 320: {
                     slidesPerView: 1,
